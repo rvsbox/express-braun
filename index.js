@@ -8,7 +8,7 @@ const hbs = exphbs.create({
   defaultLayout: 'main',
   extname: 'hbs'
 })
-app.engine('hbs', exphbs());
+app.engine('hbs', hbs.engine);
 app.set('view engine', 'hbs');
 
 
